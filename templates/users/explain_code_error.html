@@ -1,0 +1,32 @@
+{% extends 'users/Userbase.html' %}
+<h2>🔎 AI Code Error Explainer</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Programming Language:</label>
+    <select name="language" required>
+        <option value="Python">Python</option>
+        <option value="C">C</option>
+        <option value="Java">Java</option>
+        <option value="Go">Go</option>
+    </select><br><br>
+
+    <label>Paste Your Code:</label><br>
+    <textarea name="code_snippet" rows="12" cols="80" required></textarea><br><br>
+
+    <button type="submit">Explain Error</button>
+</form>
+
+{% if explanation %}
+    <h3>📝 Explanation:</h3>
+    <pre>{{ explanation }}</pre>
+
+    <h3>✅ Corrected Code:</h3>
+    <pre>{{ corrected_code }}</pre>
+{% endif %}
+
+{% if raw_response %}
+    <details>
+        <summary>Raw AI Response</summary>
+        <pre>{{ raw_response }}</pre>
+    </details>
+{% endif %}

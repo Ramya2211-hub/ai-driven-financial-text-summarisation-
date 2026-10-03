@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="index-header" style="text-align: center; margin-top: 40px;">
+  <h2 style="font-size: 2.2rem; color: #f1f5f9;"> AI-Driven Financial Text Summarization</h2>
+  <p style="max-width: 700px; margin: 10px auto; color: #cbd5e1; font-size: 1.1rem;">
+    Harness the power of Large Language Models (LLMs) like LLAMA-2, FLAN, and Claude to generate precise and concise summaries of complex financial reports, empowering analysts and decision-makers.
+  </p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 40px 0; padding: 0 1rem;">
+  <!-- Card 1 -->
+  <div class="card" style="flex: 1 1 300px; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <h3 style="color: #fbbf24;">📊 Upload Financial Reports</h3>
+    <p style="color: #e2e8f0;">
+      Provide your 10-K financial statements or related documents. Our system extracts, preprocesses, and segments the data for better understanding.
+    </p>
+</div>
+
+  <!-- Card 2 -->
+  <div class="card" style="flex: 1 1 300px; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <h3 style="color: #22d3ee;">🧠 Powered by LLAMA-2 & FLAN</h3>
+    <p style="color: #e2e8f0;">
+      Using advanced LLMs, FIN2SUM intelligently interprets financial data, captures semantic meaning, and generates human-like summaries for decision-making.
+    </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card" style="flex: 1 1 300px; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <h3 style="color: #4ade80;">⚡ Instant Summarization</h3>
+    <p style="color: #e2e8f0;">
+      Get concise, coherent summaries within seconds. Evaluate summaries with BERT and ROUGE metrics for accuracy, readability, and context retention.
+    </p>
+  </div>
+</div>
+
+{% endblock %}
